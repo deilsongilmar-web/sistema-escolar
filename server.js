@@ -43,6 +43,12 @@ app.post('/login', (req, res) => {
     return res.send('Login incorreto!');
 });
 
+app.get('/content-type' , (req, res) => {
+    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Cache-Control', 'no-store');
+    res.send('<h1> Tipo de conteudo retornado pelo backend</h1>');});
+
+// http://localhost:1234/content-type
 app.listen(1234, () => {
     console.log("Servidor iniciado na porta 1234");
 });
