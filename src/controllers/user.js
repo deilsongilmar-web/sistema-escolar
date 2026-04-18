@@ -8,12 +8,10 @@
 }
 
 function createUser(req, res) {
-    const { name, email } = req.body;
-    const newUser = { name, email };
-    fakeUsers.push(newUser);
-    res.json({ mensagem: "Usuário criado com sucesso", user: newUser });
-
-    );
+    const { name, email } = req.body;;
+    fakeUsers.push(name, email);
+    res.json({
+         mensagem: "Usuário criado com sucesso", user: newUser });
 }
 
 module.exports = {
