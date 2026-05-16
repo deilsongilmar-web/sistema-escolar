@@ -1,28 +1,32 @@
 {
   "name": "sistema-escolar",
   "version": "1.0.0",
-  "description": "![Image](https://github.com/user-attachments/assets/75085a1c-ed5d-49df-87a8-b33193808f9c) # Projeto de Banco de Dados MySQL 🗄️",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deilsongilmar-web/sistema-escolar.git"
+    "url": "git+https://github.com/kelvysmoura/sistema-escolar.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/deilsongilmar-web/sistema-escolar/issues"
+    "url": "https://github.com/kelvysmoura/sistema-escolar/issues"
   },
-  "homepage": "https://github.com/deilsongilmar-web/sistema-escolar#readme",
+  "homepage": "https://github.com/kelvysmoura/sistema-escolar#readme",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
-    "sequelize": "^6.32.1",
-    "sequelize-cli":"6.6.5",
-    "mysql2": "^3.6.0"
+    "sequelize": "^6.37.8",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.5"
   }
 }
